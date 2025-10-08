@@ -1,11 +1,90 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio BTS SIO - Gabriel Bebin</title>
+  <title>Portfolio Gabriel Bebin - BTS SIO</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+    }
+
+    header {
+      background-color: #1f1f1f;
+      color: #ffffff;
+      text-align: center;
+      padding: 40px 20px;
+      border-bottom: 1px solid #333;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #1e1e1e;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      padding: 25px;
+      margin-bottom: 30px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      background-color: #2c2c2c;
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 6px;
+    }
+
+    .projet img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #2980b9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1f1f1f;
+      color: white;
+      border-top: 1px solid #333;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -16,13 +95,14 @@
   <main>
     <section class="card">
       <h2>À propos</h2>
-      <p>Je m'appelle Gabriel Bebin, j'ai 20 ans et je suis passionné par l'informatique, le hardware et la photographie. Actuellement en BTS Services Informatiques aux Organisations (SIO), je développe mes compétences à travers des projets personnels et scolaires.</p>
+      <p>Je m'appelle Gabriel Bebin, j'ai 20 ans et je suis passionné par le développement de jeux vidéo, la 3D et l'informatique en général. Durant mes deux années de BTS SIO, j'ai exploré plusieurs domaines techniques et créatifs à travers des projets personnels et scolaires.</p>
     </section>
 
     <section class="card">
       <h2>Compétences</h2>
       <ul>
-        <li>💻 Montage et configuration de PC</li>
+        <li>🎮 Développement de jeux vidéo (Unity, Unreal Engine)</li>
+        <li>🧊 Modélisation 3D (Blender, Maya)</li>
         <li>🌐 Développement web : HTML, CSS, JavaScript</li>
         <li>🖥️ Administration systèmes et réseaux</li>
         <li>🎨 Outils graphiques : Photoshop, Canva, Figma</li>
@@ -31,11 +111,23 @@
     </section>
 
     <section class="card">
-      <h2>Projets</h2>
+      <h2>Projets BTS</h2>
       <div class="projet">
         <h3>Montage de mon PC</h3>
         <p>Projet personnel : assemblage complet d’un PC avec documentation et photos.</p>
         <img src="images/pc-montage.jpg" alt="Montage du PC">
+      </div>
+
+      <div class="projet">
+        <h3>Prototype de jeu 2D</h3>
+        <p>Création d’un mini-jeu en 2D avec Unity, incluant les mécaniques de base, les assets et les tests utilisateurs.</p>
+        <img src="images/jeu-2d.jpg" alt="Prototype jeu 2D">
+      </div>
+
+      <div class="projet">
+        <h3>Modélisation 3D</h3>
+        <p>Réalisation d’un environnement 3D dans Blender, avec textures et éclairages.</p>
+        <img src="images/3d-scene.jpg" alt="Modélisation 3D">
       </div>
     </section>
   </main>
@@ -46,84 +138,3 @@
   </footer>
 </body>
 </html>
-
-/* style.css */
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: #121212; /* fond noir moderne */
-  color: #f0f0f0; /* texte clair */
-}
-
-header {
-  background-color: #1f1f1f;
-  color: #ffffff;
-  text-align: center;
-  padding: 40px 20px;
-  border-bottom: 1px solid #333;
-}
-
-main {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
-}
-
-.card {
-  background-color: #1e1e1e;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-  padding: 25px;
-  margin-bottom: 30px;
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-h2 {
-  color: #ffffff;
-  margin-bottom: 15px;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  background-color: #2c2c2c;
-  margin: 8px 0;
-  padding: 10px;
-  border-radius: 6px;
-}
-
-.projet img {
-  max-width: 100%;
-  border-radius: 8px;
-  margin-top: 10px;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  background-color: #3498db;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #2980b9;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #1f1f1f;
-  color: white;
-  border-top: 1px solid #333;
-}
